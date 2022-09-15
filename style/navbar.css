@@ -23,6 +23,12 @@ nav {
     align-items: center;
 }
 
+#wrap{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
 #logo:hover {
     cursor: pointer;
 }
@@ -32,9 +38,6 @@ nav {
     margin-left: 7%;
 }
 
-#dropDownIcon:hover {
-    cursor: pointer;
-}
 
 #iconSection{
     display: flex;
@@ -52,8 +55,59 @@ nav {
 #iconSection > img {
     width: 2rem;
     height: 2rem;
+    border-radius: 50%;
 }
 
 #iconSection > img:hover {
     cursor: pointer;
+}
+
+#dropdown #dropbtn {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+}
+
+#dropdown > #dropbtn:hover{
+    cursor: pointer;
+}
+
+
+#searchBox > input {
+    background-color: rgb(239,239,239);
+    border: none;
+    padding: 0.7rem;
+    width: 17rem;
+    font-size: 1rem;
+    border-radius: 0.563rem;
+}
+
+
+#dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+
+#dropdown:hover #dropdown-content {
+display: block;
 }
