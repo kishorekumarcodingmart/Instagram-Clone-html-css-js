@@ -13,11 +13,6 @@
     grid-gap: 1.875rem;
 }
 
-#right-col{
-    width: 100%;
-    height: 20rem;
-    background-color: black;
-}
 
 #story{
     width: inherit;
@@ -54,6 +49,7 @@
 .individualStory > img{
     width: 4rem;
     height: 4rem;
+    object-fit: cover;
     border-radius: 50%;
     padding: 0.17rem;
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -69,4 +65,89 @@
     width: 100%;
     height: 100px;
     background-color: black;
+}
+
+
+#right-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    /* border: 1px solid black; */
+    padding-top: 1rem;
+}
+
+
+.switch{
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#Suggestions{
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Suggestions > h5 {
+    color: gray;
+}
+
+#Suggestions > h6:hover {
+    cursor: pointer;
+}
+
+#accountDetails{
+    margin-top:1rem ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.individualAccountDetails {
+    margin-left: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.individualAccountDetails > img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.individualAccountDetails > div > p {
+    font-size: small;
+    color: grey;
+}
+
+#links {
+    margin-top: 2em;
+}
+
+#links > a {
+    margin: 0.7rem;
+    color: gray;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+#links > a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    margin-top: 0.7rem;
+    color: gray;
+    font-size: 0.7rem;
 }
