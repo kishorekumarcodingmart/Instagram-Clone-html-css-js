@@ -106,7 +106,51 @@
     margin-top: 0.4rem;
     font-size: small;
 }
+.commets, .postinfo{
+    margin-left: 0.9rem;
+    margin-top: 0.4rem;
+}
 
+.gray > a{
+    font-size: small;
+    text-decoration: none;
+    margin: 0.2rem;
+    color: gray;
+}
+
+.gray > a:hover{
+    text-decoration: underline;
+}
+
+.commentInputWrapper {
+    margin-left: 0.9rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputCommet {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputCommet > input {
+    border: none;
+    background-color: inherit;
+    padding: 0.5rem;
+}
+
+.inputCommet > input:focus{
+    border: none;
+    outline:none;
+}
+
+.postBtn {
+    margin-right: 1rem;
+}
 
 .postHeader{
     display: flex;
