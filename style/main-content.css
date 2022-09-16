@@ -60,11 +60,79 @@
     
 }
 
-.post{
-    margin-top: 20px;
+.postWrapper{
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid rgb(220,220,220);
+    border-radius: 9px;
     width: 100%;
-    height: 100px;
-    background-color: black;
+
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgPost > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.moreSettingWrapper{
+    margin: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.likeCommmetShare {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.likes{
+    margin-left: 0.9rem;
+}
+
+.desciption {
+    margin-left: 0.9rem;
+    margin-top: 0.4rem;
+    font-size: small;
+}
+
+
+.postHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.postHeader > img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.postHeader > div > h6 {
+    padding: 0.3rem;
+}
+
+.moreOption {
+    margin-right: 0.3rem;
+}
+
+.moreOption:hover {
+    cursor: pointer;
 }
 
 
@@ -73,7 +141,6 @@
     flex-direction: column;
     width: 100%;
     height: 20rem;
-    /* border: 1px solid black; */
     padding-top: 1rem;
 }
 
