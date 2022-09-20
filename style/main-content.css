@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 6rem auto;
+    margin: 5.45rem auto;
 }
 
 #wrapper{
-    width: 70%;
+    width: 60%;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -15,23 +15,41 @@
 
 
 #story{
-    width: inherit;
-    height: inherit;
     background-color: white;
     border: 1px solid rgb(220,220,220);
     border-radius: 9px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: 1rem;
     overflow: hidden;
     overflow-x: auto;
+    
+}
+
+#story > #rightBtn{
+    z-index: 1;
+    position: sticky;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    text-align: center;
+    right: 1;
+    padding: 0.3rem;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
 }
 
 #story::-webkit-scrollbar{
     display: none;
 }
 
+.individualStory:nth-child(1){
+    margin-left: 1.5rem;
+}
 
 
 .individualStory{

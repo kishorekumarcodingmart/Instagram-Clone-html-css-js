@@ -1,7 +1,7 @@
 nav {
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(220,220,220);
-    height: 4.2rem;
+    height: 9%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +14,12 @@ nav {
 #navBarLogo {
     width: 70%;
     margin: 0 auto;
+    /* padding: 0.53rem; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 #mainLogo{
@@ -57,8 +59,8 @@ nav {
 }
 
 #iconSection > img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     border-radius: 50%;
 }
 
@@ -82,7 +84,7 @@ nav {
 #searchBox > input {
     background-color: rgb(239,239,239);
     border: none;
-    padding: 0.7rem;
+    padding: 0.6rem;
     width: 17rem;
     font-size: 1rem;
     border-radius: 0.563rem;
