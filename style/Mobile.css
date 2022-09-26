@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .navMobile {
+        background-color: #fafafa;
+        position: sticky;
+        top: 0;
+        height: 7%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgb(220,220,220);
+    }
+
+    .footerMobile {
+        background-color: #fafafa;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 7%;
+        border-top: 1px solid rgb(220,220,220);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .mobileIconsFooter > img {
+        height: 1.8rem;
+        width: 1.8rem;
+        border-radius: 50%;
+    }
+
+    .storyMobileHeader {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        background-color: #fafafa;
+        border-bottom: 1px solid rgb(220,220,220);
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .storyMobileHeader::-webkit-scrollbar{
+        display: none;
+    }
+
+    .storySectionWrapperMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .individualStoryMobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+
+    /* Start */
+
+
+    .circle {
+        position: relative;
+        width: 4.5rem;
+        height: 4.5rem;
+        top: -0.4rem;
+    }
+    
+    .UsernameStoryMobileinside {
+        margin-top: 0.2rem;
+        position: relative;
+        top: -0.6rem;
+        left: 0.5rem;
+        font-size: 0.7rem;
+        white-space: nowrap; 
+        width: 3.5rem; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    
+    .MobileRotate {
+        fill: none;
+        stroke: #8a3ab9;
+        stroke-linecap: round;
+        stroke-width: 3;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 0;
+        animation: stroke-draw 6s ease-out infinite alternate;
+        enable-background:new -580 439 577.9 194;
+    }
+    
+    .storyPhotoMobile {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+    }
+    
+    @keyframes stroke-draw {
+        from {
+            stroke: #8a3ab9;
+            stroke-dasharray: 1;
+        }
+    
+        to {
+            stroke: #cd486b;
+            transform: rotate(180deg);
+            stroke-dasharray: 8;
+        }
+    }
+    
+  }

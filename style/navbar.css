@@ -1,0 +1,119 @@
+#nav {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(220,220,220);
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+
+}
+
+#navBarLogo {
+    width: 70%;
+    margin: 0 auto;
+    /* padding: 0.53rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#mainLogo{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrap{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+
+#dropDownIcon{
+    margin-left: 7%;
+}
+
+
+#iconSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+#iconSection > svg {
+    margin-right: 1.1rem;
+}
+
+#iconSection > svg:hover {
+    cursor: pointer;
+}
+
+#iconSection > img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+}
+
+#iconSection > img:hover {
+    cursor: pointer;
+}
+
+#dropdown #dropbtn {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+}
+
+#dropdown > #dropbtn:hover{
+    cursor: pointer;
+}
+
+
+#searchBox > input {
+    background-color: rgb(239,239,239);
+    border: none;
+    padding: 0.6rem;
+    width: 17rem;
+    font-size: 1rem;
+    border-radius: 0.563rem;
+}
+
+
+#dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+
+#dropdown:hover #dropdown-content {
+display: block;
+}
