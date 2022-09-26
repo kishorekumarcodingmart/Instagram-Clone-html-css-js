@@ -6,6 +6,7 @@
         display: block;
     }
     .navMobile {
+        z-index: 1;
         background-color: #fafafa;
         position: sticky;
         top: 0;
@@ -125,6 +126,49 @@
             transform: rotate(180deg);
             stroke-dasharray: 8;
         }
+    }
+
+    /* Post */
+    .PostSectionMobileWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .PostHeaderWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .otherMobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    #PostProfilePhotoMobile{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+    }
+    
+    .PostProfileNameMobile, .OtherDetailsMobile{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    
+    .PostMobile {
+        width: 100%;
+        height: auto;
     }
     
   }
